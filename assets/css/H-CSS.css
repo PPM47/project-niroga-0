@@ -1,0 +1,381 @@
+body {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+:root{
+    --primary-color:#0067D9;
+    --primary-color-fade:#046fe9;
+  --secondary-color: #1b206e;
+  --footer-coloer:#101022;
+  --copyright-color:#121256;
+}
+/*----------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+.body_of.active{
+  overflow: hidden;
+}
+
+a {
+  color:var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color-fade);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*top contact liinks and social links-------------------*/
+/*--------
+.navi-top{
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 14px;
+    box-shadow: none;
+    padding: 0.1% 0.6%;
+}
+.navi-top-details li a {
+    color: #fff;
+}
+.navi-top-details li a:hover{
+    color: #fff;
+}
+.nav-link{
+    padding: 0.4rem 0.4rem !important;
+}
+.list-inline-item:not(:last-child) {
+    margin-right: .3rem !important;
+}
+.text-lg-right {
+    text-align: right !important;
+    padding: 0px 20px !important;
+}
+--------*/
+#topbar {
+  background: var(--primary-color);
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  z-index: 996;
+}
+
+#topbar.topbar-scrolled {
+  top: -40px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#topbar .contact-info i {
+  color: #fff;
+  padding-right: 4px;
+  margin-left: 15px;
+  line-height: 0;
+  
+}
+
+#topbar .contact-info i:first-child {
+  margin-left: 0;
+}
+
+#topbar .social-links a {
+  color: #fff;
+  padding-left: 15px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+  color: #1977cc;
+}
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+}
+.contact-info i a{
+  text-decoration: none;
+  font-style: normal;
+}
+.contact-info i{
+  text-decoration: none;
+  font-style: normal;
+}
+/*navigation ber-------------------------------------*/
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  top: 40px;
+  
+}
+/*Appointment Button*/
+.appointment-btn {
+  margin-left: 25px;
+  background:var(--primary-color);
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.appointment-btn:hover {
+  background: var(--primary-color-fade);
+  color: #fff;
+}
+/**/
+#header .logo img {
+  max-height: 40px;
+}
+.navbar {
+  padding: 0;
+  
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar a{
+
+  color: var(--secondary-color);
+}
+.navbar li {
+  position: relative;
+}
+
+.navbar > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding: 8px 0 8px 20px;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: 0.3s;
+  border-bottom: 2px solid #fff;
+  padding: 5px 2px;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: black;
+  border-color: var(--primary-color);
+}
+/*----------nav m--------*/
+.navbarM{
+  display: none;
+}
+.navbarM.active{
+  display: list-item;
+  left: 0;
+}
+.navbarM.active ul{
+  position: relative;
+  
+}
+.navbarM.active ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  
+}
+.navbarM.active ul li a{
+  font-size: 1.5rem;
+  color: #111;
+  text-decoration: none;
+  font-weight: 300;
+  
+}.navbarM.active ul li a:hover{
+  color: var(--primary-color);
+  
+}
+/*---------navi .active----------*/
+.navbar.active{
+  display: none;
+}
+/*-----------------menu togle-------------------------*/
+
+.toggle{
+  display: none;
+  cursor: pointer;
+}
+.toggle.active{
+  display: inline;
+      padding-right: 2%;
+      padding-left: 0%;
+      color: var(--primary-color);
+      scale: 80%;
+}
+/*-----------------menu togle . active-------------------------*/
+
+/* -------profile icon-----padding: 8px 15px 10px 15px;--*/
+.profile{
+  color: black;
+  padding: 0.6% 0% 0% 1%;
+  color: var(--primary-color);
+  vertical-align: middle;
+  scale: 95%;
+  
+}
+.logo.active{
+  display: none;
+}
+/*-------------------- mobile navi toggle--------------
+
+/* -------------------------mobile navigathion ------------------*/
+
+/*-------------------------welcome div------------*/
+
+.W_box{
+  position: relative;
+  text-align: left;
+  display:block;
+}
+/*tesxt div*/
+.W_text{
+  font-size: 2.2rem;
+  color: #111;
+  
+}
+.W_text h2{
+  font-style: italic;
+}
+/*img div*/
+.img{
+  background-image: url(/assets/img/66_generated.png);
+  max-height: 100%;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  z-index: 40;
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+@media (max-width:480px){
+
+    /*top contact liinks and social links*/
+    .text-lg-right {
+        text-align: left !important;
+        padding: 0px 35px !important;
+    }
+    /*-------navi log*/
+    #log-ni a img{
+      max-width: 50%;
+      max-height: 50%;
+    }
+    /*menu togle--------------*/
+    .toggle{
+ 
+      display: inline;
+      padding-right: 3%;
+      padding-left: 1%;
+      color: var(--primary-color);
+    }
+    /**/
+    .profile{
+      scale: 100%;
+      padding: 2% 0% 0% 0%;
+      vertical-align: middle;
+      align-items: center;
+    }
+    /**/
+
+}
+@media (max-width:768px){
+    
+    /*appointment btn*/
+    .appointment-btn {
+      margin: 0 15px 0 0;
+      padding: 6px 18px;
+    }
+    /**/
+   
+    /*log img*/
+    #log-ni a img{
+      max-width: 50%;
+      max-height: 50%;
+    }
+    /* profile btn*/
+    .profile{
+      scale: 100%;
+      padding: 1% 0% 0% 0.5%;
+      vertical-align: middle;
+    }
+     /*menu togle--------------*/
+     .toggle{
+      display: inline;
+      padding-right: 3%;
+      padding-left: 0%;
+      color: var(--primary-color);
+    }
+    /**/
+}
+@media (max-width:1024px){
+
+    /**/
+    .navbar ul {
+      display: none;
+    }
+     /* profile btn*/
+     .profile{
+      padding: 2% 0% 0.6% 1%;
+      vertical-align: middle;
+      
+    }
+     /*menu togle--------------*/
+     .toggle{
+      display: inline;
+      padding-right: 3%;
+      padding-left: 0%;
+      color: var(--primary-color);
+      
+    }
+    /**/
+    /**/
+    /**/
+    /**/
+}
+@media screen and (max-width:1200px){
+
+    /**/
+    /**/
+    /**/
+    /**/
+    /**/
+}
